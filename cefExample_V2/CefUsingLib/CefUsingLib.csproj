@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net48</TargetFramework>
+    <Platforms>x86</Platforms>
+    <OutputPath>..\Out</OutputPath>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <CefSharpTargetDir>CefSharp</CefSharpTargetDir>
+  </PropertyGroup>
+  
+  <ItemGroup>
+    <PackageReference Include="CefSharp.WinForms" Version="89.0.170">
+      <PrivateAssets>all</PrivateAssets>
+      <ExcludeAssets>runtime</ExcludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <!-- TODO manual build/clean that CefSharp.Forms is also in subfolder "CefSharp" -->
+</Project>

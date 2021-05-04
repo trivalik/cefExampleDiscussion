@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net48</TargetFramework>
+    <Platforms>x86</Platforms>
+    <OutputPath>..\Out</OutputPath>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <CefSharpTargetDir>CefSharp</CefSharpTargetDir>
+    <CefSharpBuildAction>None</CefSharpBuildAction>
+  </PropertyGroup>
+  
+  <ItemGroup>
+    <PackageReference Include="CefSharp.WinForms" Version="89.0.170" />
+  </ItemGroup>
+
+</Project>
