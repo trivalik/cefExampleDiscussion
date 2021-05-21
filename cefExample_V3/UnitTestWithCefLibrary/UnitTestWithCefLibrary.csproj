@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net48</TargetFramework>
+    <Platforms>x86</Platforms>
+    <!-- OutputPath is different, since this is a test project -->
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CefUsingLib\CefUsingLib.csproj" />
+  </ItemGroup>
+  
+  <PropertyGroup>
+    <!-- we have here to use same directory structure that, version check combined with path check works -->
+    <CefSharpTargetDir>Sub\CefSharp</CefSharpTargetDir>
+  </PropertyGroup>
+  
+  <ItemGroup>
+    <PackageReference Include="CefSharp.WinForms" Version="90.6.50">
+      <PrivateAssets>buildTransitive</PrivateAssets>
+    </PackageReference>
+  </ItemGroup>
+
+</Project>
